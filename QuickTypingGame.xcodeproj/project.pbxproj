@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		8AB9159E29C8690B001184A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB9159D29C8690B001184A9 /* AppDelegate.swift */; };
 		8AB915A029C8690B001184A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB9159F29C8690B001184A9 /* SceneDelegate.swift */; };
-		8AB915A229C8690B001184A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB915A129C8690B001184A9 /* ViewController.swift */; };
+		8AB915A229C8690B001184A9 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB915A129C8690B001184A9 /* SplashScreenViewController.swift */; };
 		8AB915A529C8690B001184A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB915A329C8690B001184A9 /* Main.storyboard */; };
 		8AB915A829C8690B001184A9 /* QuickTypingGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB915A629C8690B001184A9 /* QuickTypingGame.xcdatamodeld */; };
 		8AB915AA29C8690C001184A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB915A929C8690C001184A9 /* Assets.xcassets */; };
-		8AB915AD29C8690C001184A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB915AB29C8690C001184A9 /* LaunchScreen.storyboard */; };
+		8AB915BF29C872E0001184A9 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB915BE29C872E0001184A9 /* GameScreenViewController.swift */; };
+		8AB915C129C8731A001184A9 /* EndScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB915C029C8731A001184A9 /* EndScreenViewController.swift */; };
+		8AB915C329C8D2D7001184A9 /* Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AB915C229C8D2D7001184A9 /* Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AB9159A29C8690B001184A9 /* QuickTypingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTypingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB9159D29C8690B001184A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AB9159F29C8690B001184A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AB915A129C8690B001184A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AB915A129C8690B001184A9 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		8AB915A429C8690B001184A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AB915A729C8690B001184A9 /* QuickTypingGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickTypingGame.xcdatamodel; sourceTree = "<group>"; };
 		8AB915A929C8690C001184A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8AB915AC29C8690C001184A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AB915AE29C8690C001184A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AB915BE29C872E0001184A9 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		8AB915C029C8731A001184A9 /* EndScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenViewController.swift; sourceTree = "<group>"; };
+		8AB915C229C8D2D7001184A9 /* Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png"; path = "../../../Downloads/Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,12 @@
 			children = (
 				8AB9159D29C8690B001184A9 /* AppDelegate.swift */,
 				8AB9159F29C8690B001184A9 /* SceneDelegate.swift */,
-				8AB915A129C8690B001184A9 /* ViewController.swift */,
+				8AB915A129C8690B001184A9 /* SplashScreenViewController.swift */,
 				8AB915A329C8690B001184A9 /* Main.storyboard */,
+				8AB915C029C8731A001184A9 /* EndScreenViewController.swift */,
+				8AB915BE29C872E0001184A9 /* GameScreenViewController.swift */,
 				8AB915A929C8690C001184A9 /* Assets.xcassets */,
-				8AB915AB29C8690C001184A9 /* LaunchScreen.storyboard */,
+				8AB915C229C8D2D7001184A9 /* Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png */,
 				8AB915AE29C8690C001184A9 /* Info.plist */,
 				8AB915A629C8690B001184A9 /* QuickTypingGame.xcdatamodeld */,
 			);
@@ -128,7 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AB915AD29C8690C001184A9 /* LaunchScreen.storyboard in Resources */,
+				8AB915C329C8D2D7001184A9 /* Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png in Resources */,
 				8AB915AA29C8690C001184A9 /* Assets.xcassets in Resources */,
 				8AB915A529C8690B001184A9 /* Main.storyboard in Resources */,
 			);
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AB915A229C8690B001184A9 /* ViewController.swift in Sources */,
+				8AB915BF29C872E0001184A9 /* GameScreenViewController.swift in Sources */,
+				8AB915A229C8690B001184A9 /* SplashScreenViewController.swift in Sources */,
+				8AB915C129C8731A001184A9 /* EndScreenViewController.swift in Sources */,
 				8AB9159E29C8690B001184A9 /* AppDelegate.swift in Sources */,
 				8AB915A829C8690B001184A9 /* QuickTypingGame.xcdatamodeld in Sources */,
 				8AB915A029C8690B001184A9 /* SceneDelegate.swift in Sources */,
@@ -157,14 +165,6 @@
 				8AB915A429C8690B001184A9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8AB915AB29C8690C001184A9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AB915AC29C8690C001184A9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

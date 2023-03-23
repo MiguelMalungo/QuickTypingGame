@@ -1,24 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashScreenViewController" customModule="QuickTypingGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png" translatesAutoresizingMaskIntoConstraints="NO" id="551-wq-poF">
+                                <rect key="frame" x="-317" y="-51" width="1024" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-m9-dUe">
+                                <rect key="frame" x="103" y="234" width="184" height="52"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="W2t-u4-ZgS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="29"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPu-Rj-uor"/>
+                                    <segue destination="roI-Cg-Xv9" kind="show" identifier="showGameScreen" id="2ud-Z4-OLh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Typing Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpd-gd-w2y">
+                                <rect key="frame" x="31" y="86" width="328" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="xPT-Gt-eh5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mpd-gd-w2y" secondAttribute="trailing" constant="31" id="4wl-EP-lm1"/>
+                            <constraint firstItem="IjR-m9-dUe" firstAttribute="top" secondItem="mpd-gd-w2y" secondAttribute="bottom" constant="115" id="5Oa-Xz-Z4Q"/>
+                            <constraint firstItem="mpd-gd-w2y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="99e-tw-BO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IjR-m9-dUe" secondAttribute="trailing" constant="103" id="SK1-Aa-vvp"/>
+                            <constraint firstItem="IjR-m9-dUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="hDk-1k-BrO"/>
+                            <constraint firstItem="mpd-gd-w2y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="xKr-gc-bqW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80" y="3.5545023696682461"/>
+        </scene>
+        <!--Game Screen View Controller-->
+        <scene sceneID="wT6-e3-IVG">
+            <objects>
+                <viewController id="roI-Cg-Xv9" customClass="GameScreenViewController" customModule="QuickTypingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JKl-yl-Vs9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-I3-VoK">
+                                <rect key="frame" x="-181" y="312" width="753" height="459"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="459" id="5H6-Hz-TMk"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QzT-9R-P23">
+                                <rect key="frame" x="96" y="144" width="198" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fXD-dr-Mfs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKs-8e-DdW">
+                                <rect key="frame" x="78" y="355" width="234" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WdZ-jq-lKz"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Score">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtA-1v-X9h">
+                                <rect key="frame" x="64" y="47" width="263" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="eSd-WG-biU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toN-Sn-L4G">
+                                <rect key="frame" x="132" y="248" width="126" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lDE-vA-mLo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Timer">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1vs-8N-TsL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1vs-8N-TsL" firstAttribute="trailing" secondItem="QzT-9R-P23" secondAttribute="trailing" constant="96" id="33T-F6-veX"/>
+                            <constraint firstItem="QzT-9R-P23" firstAttribute="top" secondItem="RtA-1v-X9h" secondAttribute="bottom" constant="46" id="3g7-Zw-F23"/>
+                            <constraint firstItem="1vs-8N-TsL" firstAttribute="trailing" secondItem="RtA-1v-X9h" secondAttribute="trailing" constant="63" id="E9U-y9-FRA"/>
+                            <constraint firstAttribute="trailing" secondItem="KHY-I3-VoK" secondAttribute="trailing" constant="-182" id="HZX-Mq-agr"/>
+                            <constraint firstItem="1vs-8N-TsL" firstAttribute="bottom" secondItem="KHY-I3-VoK" secondAttribute="bottom" constant="16" id="MQ6-Jx-AEr"/>
+                            <constraint firstItem="KHY-I3-VoK" firstAttribute="leading" secondItem="JKl-yl-Vs9" secondAttribute="leading" constant="-181" id="PzY-GY-omF"/>
+                            <constraint firstItem="RtA-1v-X9h" firstAttribute="leading" secondItem="1vs-8N-TsL" secondAttribute="leading" constant="64" id="XZ6-2i-AdK"/>
+                            <constraint firstItem="toN-Sn-L4G" firstAttribute="top" secondItem="QzT-9R-P23" secondAttribute="bottom" constant="53" id="b4w-Zr-kht"/>
+                            <constraint firstItem="wKs-8e-DdW" firstAttribute="leading" secondItem="1vs-8N-TsL" secondAttribute="leading" constant="154" id="cGB-rI-X58"/>
+                            <constraint firstItem="1vs-8N-TsL" firstAttribute="trailing" secondItem="wKs-8e-DdW" secondAttribute="trailing" constant="154" id="ekw-h4-7fH"/>
+                            <constraint firstItem="wKs-8e-DdW" firstAttribute="top" secondItem="toN-Sn-L4G" secondAttribute="bottom" constant="61" id="pIk-C4-9x3"/>
+                            <constraint firstItem="QzT-9R-P23" firstAttribute="leading" secondItem="1vs-8N-TsL" secondAttribute="leading" constant="96" id="qVb-V3-dhE"/>
+                            <constraint firstItem="1vs-8N-TsL" firstAttribute="trailing" secondItem="toN-Sn-L4G" secondAttribute="trailing" constant="149" id="qsn-gZ-tnY"/>
+                            <constraint firstItem="toN-Sn-L4G" firstAttribute="leading" secondItem="1vs-8N-TsL" secondAttribute="leading" constant="150" id="uYg-Nh-nCD"/>
+                            <constraint firstItem="RtA-1v-X9h" firstAttribute="top" secondItem="1vs-8N-TsL" secondAttribute="top" id="xFu-97-dyu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Vc-nQ-EwP"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="QzT-9R-P23" id="53b-oG-Ydf"/>
+                        <outlet property="scoreLabel" destination="wKs-8e-DdW" id="nUE-ns-yQF"/>
+                        <outlet property="timerLabel" destination="toN-Sn-L4G" id="CIX-rT-Qor"/>
+                        <outlet property="wordLabel" destination="RtA-1v-X9h" id="vUa-Yp-zfu"/>
+                        <segue destination="7g2-v6-KAu" kind="show" identifier="showEndScreen" id="eex-TD-g59"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMC-DT-SCO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.61538461538453" y="3.5545023696682461"/>
+        </scene>
+        <!--End Screen View Controller-->
+        <scene sceneID="fT9-v2-0Np">
+            <objects>
+                <viewController id="7g2-v6-KAu" customClass="EndScreenViewController" customModule="QuickTypingGame" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raz-lb-5St">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png" translatesAutoresizingMaskIntoConstraints="NO" id="1TI-R2-bhW">
+                                <rect key="frame" x="-317" y="-136" width="1024" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywu-iB-Cjg">
+                                <rect key="frame" x="86" y="160" width="218" height="54"/>
+                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="aKr-YR-al9"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="34"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAgainButtonTapped:" destination="7g2-v6-KAu" eventType="touchUpInside" id="NGg-9g-Kqi"/>
+                                    <segue destination="ZCE-vg-0JY" kind="unwind" identifier="unwindToSplashScreen" unwindAction="unwindToSplashScreen:" id="2Jw-Uj-MDf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-GC-tJh">
+                                <rect key="frame" x="40" y="47" width="311" height="43"/>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="kAv-uS-miU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ac9-Hj-nUF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ywu-iB-Cjg" firstAttribute="top" secondItem="3sF-GC-tJh" secondAttribute="bottom" constant="70" id="A49-Tk-lGR"/>
+                            <constraint firstItem="3sF-GC-tJh" firstAttribute="leading" secondItem="Ac9-Hj-nUF" secondAttribute="leading" constant="40" id="BKA-MV-hkJ"/>
+                            <constraint firstItem="Ac9-Hj-nUF" firstAttribute="trailing" secondItem="ywu-iB-Cjg" secondAttribute="trailing" constant="86" id="Lp1-HQ-zYL"/>
+                            <constraint firstItem="Ac9-Hj-nUF" firstAttribute="trailing" secondItem="3sF-GC-tJh" secondAttribute="trailing" constant="39" id="TVo-Az-bdx"/>
+                            <constraint firstItem="3sF-GC-tJh" firstAttribute="top" secondItem="Ac9-Hj-nUF" secondAttribute="top" id="Whv-56-Dfp"/>
+                            <constraint firstItem="ywu-iB-Cjg" firstAttribute="leading" secondItem="Ac9-Hj-nUF" secondAttribute="leading" constant="86" id="zMB-q6-mtS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QUY-qY-cC5"/>
+                    <connections>
+                        <outlet property="finalScoreLabel" destination="3sF-GC-tJh" id="bQX-Oe-gQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJc-ra-JR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZCE-vg-0JY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5384615384614" y="3.5545023696682461"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Miguel_Malungo_the_background_for_an_iphone_app_which_is_a_writ_8264741a-2424-4872-9c95-19bd64886b70.png" width="1024" height="1024"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
