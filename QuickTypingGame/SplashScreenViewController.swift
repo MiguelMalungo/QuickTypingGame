@@ -11,7 +11,7 @@ class SplashScreenViewController: UIViewController {
     }
     
     @IBAction func unwindToSplashScreen(_ unwindSegue: UIStoryboardSegue) {
-        // No additional code is needed here, as this function serves as an anchor for the unwind segue.
+       
     }
 
 }
